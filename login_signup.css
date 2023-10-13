@@ -1,0 +1,144 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+body{
+    background-color:black;
+    color:#0FCD22;
+    overflow:hidden;
+}
+.login_box,.signup_box{
+    border:2px solid #0FCD22;
+    height:auto; 
+    width:50vh;
+    border-radius:10px;
+    padding:20px 30px;
+    position: relative;
+    top:50vh;
+    left:50%;
+    background-color: black;
+    transform:translate(-50%,-50%);
+    box-shadow:0 0 10px 7px rgba(15,205,34,.5);
+}
+.login_box h2, .signup_box h2{
+    text-align: center;
+    margin:1vh 0 5vh;
+}
+.field{
+    font-size:3vh;
+    margin-bottom:4vh;
+    color:white;
+    /* border:1px solid yellow; */
+}
+.signup_box .field{
+    margin-bottom:2vh;
+}
+.field input{
+    height:6vh;
+    width:100%;
+    border-radius:5px;
+    margin:2vh 0 0;
+    background-color: black;
+    color:white;
+    outline:0;
+    padding-left:2vh;
+    border:1px solid #0FCD22;
+    /* transition: all 1s; */
+}
+.field input:hover{
+    background-color:rgba(15,205,34,.7);
+    color:black;
+    font-weight:bold;
+}
+.login_box button,.signup_box button{
+    height:6vh;
+    width:50%;
+    border-radius:20px;
+    position:relative;
+    left:50%;
+    transform: translate(-50%);
+    margin-top:5vh;
+    font-weight:600;
+    background-color: #0FCD22;
+    cursor:pointer;
+    transition:all .5s;
+}
+.login_box button:hover , .signup_box button:hover{
+  width:54%;
+  box-shadow:0 0 10px 2px rgba(15,205,34,.7);
+  font-size:2.5vh;
+}
+.field_end{
+    color:white;
+    margin-top:7vh;
+}
+.field_end h4{
+    /* border:1px solid red; */
+    margin:2vh 0;
+    font-weight:normal;
+}
+#img_1
+{
+    position:absolute;
+    top:0;
+    height:35vh;
+    left:55%;
+    z-index:-1;
+}
+#img_2
+{
+    position:absolute;
+    top:60vh;
+    height:25vh;
+    width:50vh;
+    transform: rotateZ(-30deg);
+    left:20%;
+    z-index:-1;
+}
+a{
+    color:white;
+}
+@media screen and (max-width:700px){
+    #img_2{
+        left:10%;
+    }
+}
+@media screen and (max-width:400px){
+    #img_2{
+        top:65vh;
+        left:-20%;
+    }
+    .login_box,.signup_box{
+        width:45vh;
+        padding:20px;
+    }
+    .signup_box{
+        padding:5px 10px;
+        width:40vh;
+        top:45vh;
+
+    }
+      .signup_box button{
+        margin-top:1vh;
+        font-weight:600;
+        background-color: #0FCD22;
+        cursor:pointer;
+        transition:all .5s;
+    }
+    .field_end{
+        margin-top:4vh;
+    }
+.signup_box .field{
+    margin-bottom:1vh;
+    font-size:2.5vh;
+}
+.signup_box .field input{
+    height:5vh;
+    margin:1vh 0 0;
+}
+.signup_box button{
+    height:5vh;
+}
+    
+}
